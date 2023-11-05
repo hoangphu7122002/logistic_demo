@@ -27,9 +27,16 @@ from src.conf.configs import Configs
 # 评价器
 class Evaluator(object):
     # 多目标处理方式：距离增加量与超时量加权求和
+    
+    @staticmethod
+    def cal_distance(history, route_map, vehicle_num: int):
+        _, destination_dict, place_dict = Evaluator.calculate_total_distance(history.get_vehicle_position_history(), route_map)
+        # logger.info(f"Total distance: {total_distance: .3f}")
+        return destination_dict,place_dict
+    
     @staticmethod
     def calculate_total_score(history, route_map, vehicle_num: int):
-        total_distance = Evaluator.calculate_total_distance(history.get_vehicle_position_history(), route_map)
+        total_distance,_,_ = Evaluator.calculate_total_distance(history.get_vehicle_position_history(), route_map)
         logger.info(f"Total distance: {total_distance: .3f}")
         total_over_time = Evaluator.calculate_total_over_time(history.get_order_item_status_history())
         logger.info(f"Sum over time: {total_over_time: .3f}")
@@ -39,19 +46,29 @@ class Evaluator(object):
 
     @staticmethod
     def calculate_total_distance(vehicle_id_to_node_list: dict, route_map):
+        destination_dict = {}
+        place_dict = {}
         total_distance = 0
         if not vehicle_id_to_node_list:
-            return total_distance
+            return total_distance   
 
         for vehicle_id, nodes in vehicle_id_to_node_list.items():
             travel_factory_list = []
             for node in nodes:
                 travel_factory_list.append(node['factory_id'])
-            distance = calculate_traveling_distance_of_routes(travel_factory_list, route_map)
+            distance,place = calculate_traveling_distance_of_routes(travel_factory_list, route_map)
+            destination_dict[vehicle_id] = distance
+            place_dict[vehicle_id] = place
+            
             total_distance += distance
             logger.info(f"Traveling Distance of Vehicle {vehicle_id} is {distance: .3f}, "
                         f"visited node list: {len(travel_factory_list)}")
-        return total_distance
+        list_VI = ['V_1','V_2','V_3','V_4','V_5']
+        for k in list_VI:
+            if k not in destination_dict.keys():
+                destination_dict[k] = 0
+            
+        return total_distance,destination_dict,place_dict
 
     @staticmethod
     def calculate_total_over_time(item_id_to_status_list: dict):
@@ -104,8 +121,10 @@ def calculate_traveling_distance_of_routes(factory_id_list, route_map):
     travel_distance = 0
     if len(factory_id_list) <= 1:
         return travel_distance
-
+    # print("====================================")
+    # print(factory_id_list)
+    # print("====================================")
     for index in range(len(factory_id_list) - 1):
         travel_distance += route_map.calculate_distance_between_factories(factory_id_list[index],
                                                                           factory_id_list[index + 1])
-    return travel_distance
+    return travel_distance,factory_id_list[-1]

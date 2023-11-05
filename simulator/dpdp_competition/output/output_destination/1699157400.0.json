@@ -1,0 +1,60 @@
+{
+    "V_1": null,
+    "V_2": {
+        "factory_id": "f6faef4b36e743328800b961aced4a2c",
+        "lng": 116.6346,
+        "lat": 40.2301,
+        "delivery_item_list": [
+            "0814110030-1",
+            "0814110030-2",
+            "0814110030-3",
+            "0814110030-4",
+            "0814110030-5",
+            "0814110030-6",
+            "0814110030-7",
+            "0814110030-8",
+            "0937560037-1"
+        ],
+        "pickup_item_list": [],
+        "arrive_time": 1699158408.0,
+        "leave_time": 0
+    },
+    "V_3": {
+        "factory_id": "f6faef4b36e743328800b961aced4a2c",
+        "lng": 116.6346,
+        "lat": 40.2301,
+        "delivery_item_list": [
+            "0752450029-1"
+        ],
+        "pickup_item_list": [],
+        "arrive_time": 1699158276.0,
+        "leave_time": 0
+    },
+    "V_4": {
+        "factory_id": "5e2e9efa5ade4984bb18af66028bc0c8",
+        "lng": 116.6191,
+        "lat": 40.2128,
+        "delivery_item_list": [
+            "1001390039-1",
+            "1001390039-2",
+            "1001390039-3",
+            "1001390039-4",
+            "1001390039-5",
+            "1001390039-6"
+        ],
+        "pickup_item_list": [],
+        "arrive_time": 1699160928.0,
+        "leave_time": 0
+    },
+    "V_5": {
+        "factory_id": "b6dd694ae05541dba369a2a759d2c2b9",
+        "lng": 116.6264,
+        "lat": 40.2253,
+        "delivery_item_list": [
+            "0925530033-1"
+        ],
+        "pickup_item_list": [],
+        "arrive_time": 1699159404.0,
+        "leave_time": 0
+    }
+}

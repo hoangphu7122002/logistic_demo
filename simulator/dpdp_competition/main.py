@@ -39,7 +39,7 @@ if __name__ == "__main__":
         test_instances = Configs.all_test_instances
 
     score_list = []
-    for idx in test_instances:
+    for idx in [11]:
         # Initial the log
         log_file_name = f"dpdp_{datetime.datetime.now().strftime('%y%m%d%H%M%S')}.log"
         ini_logger(log_file_name)

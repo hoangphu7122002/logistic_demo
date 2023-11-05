@@ -95,6 +95,22 @@ class SimulateEnvironment(object):
     def run(self):
         used_seconds = 0
         # 迭代
+        destination_dict = {
+            "V_1" : 0,
+            "V_2" : 0,
+            "V_3" : 0,
+            "V_4" : 0,
+            "V_5" : 0
+        }
+        
+        place_dict = {
+            "V_1" : '',
+            "V_2" : '',
+            "V_3" : '',
+            "V_4" : '',
+            "V_5" : ''
+        }
+        
         while True:
             logger.info(f"{'*' * 50}")
 
@@ -107,7 +123,7 @@ class SimulateEnvironment(object):
             updated_input_info = self.update_input()
 
             # 派单环节, 设计与算法交互
-            used_seconds, dispatch_result = self.dispatch(updated_input_info)
+            used_seconds, dispatch_result = self.dispatch(updated_input_info,self.cur_time,destination_dict,place_dict)
             self.time_to_dispatch_result[self.cur_time] = dispatch_result
 
             # 校验, 车辆目的地不能改变
@@ -128,12 +144,13 @@ class SimulateEnvironment(object):
             if self.ignore_allocating_timeout_orders(dispatch_result):
                 logger.error('Simulator terminated')
                 sys.exit(-1)
-
+            destination_dict,place_dict = Evaluator.cal_distance(self.history, self.route_map, len(self.id_to_vehicle))
+            
         # 模拟完成车辆剩下的订单
         self.simulate_the_left_ongoing_orders_of_vehicles(self.id_to_vehicle)
+        self.total_score = Evaluator.calculate_total_score(self.history, self.route_map, len(self.id_to_vehicle))
 
         # 根据self.history 计算指标
-        self.total_score = Evaluator.calculate_total_score(self.history, self.route_map, len(self.id_to_vehicle))
 
     # 数据更新
     def update_input(self):
@@ -220,12 +237,15 @@ class SimulateEnvironment(object):
             vehicle.planned_route = []
 
     # 派单环节
-    def dispatch(self, input_info):
+    def dispatch(self, input_info, cur_time = '',destination_dict = None,place_dict = None):
         # 1. Prepare the input json of the algorithm
-        convert_input_info_to_json_files(input_info)
+        convert_input_info_to_json_files(input_info,cur_time,destination_dict,place_dict)
 
         # 2. Run the algorithm
         if not self.algorithm_calling_command:
+            print("=======================")
+            print("here")
+            print("=======================")
             self.algorithm_calling_command = get_algorithm_calling_command()
         time_start_algorithm = time.time()
         used_seconds, message = subprocess_function(self.algorithm_calling_command)
@@ -235,7 +255,7 @@ class SimulateEnvironment(object):
             if (time_start_algorithm < os.stat(Configs.algorithm_output_destination_path).st_mtime < time.time()
                     and time_start_algorithm < os.stat(
                         Configs.algorithm_output_planned_route_path).st_mtime < time.time()):
-                vehicle_id_to_destination, vehicle_id_to_planned_route = get_output_of_algorithm(self.id_to_order_item)
+                vehicle_id_to_destination, vehicle_id_to_planned_route = get_output_of_algorithm(self.id_to_order_item,cur_time)
                 dispatch_result = DispatchResult(vehicle_id_to_destination, vehicle_id_to_planned_route)
                 return used_seconds, dispatch_result
             else:
@@ -299,5 +319,8 @@ class SimulateEnvironment(object):
                                  f"{datetime.datetime.fromtimestamp(item.committed_completion_time)} "
                                  f"which has timed out, "
                                  f"however it is still ignored in the dispatch result.")
-                    return True
+                    ##CHANGE##
+                    # return True
+                    ##CHANGE##
+                    
         return False

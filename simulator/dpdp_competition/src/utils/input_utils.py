@@ -31,7 +31,6 @@ from src.common.vehicle import Vehicle
 from src.conf.configs import Configs
 from src.utils.logging_engine import logger
 
-
 def get_initial_data(data_file_path: str, vehicle_info_file_path: str, route_info_file_path: str,
                      factory_info_file_path: str, initial_time: int):
     """

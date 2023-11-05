@@ -1,0 +1,225 @@
+2023-11-05 19:33:22,051 [main.py         | 48] INFO: Start to run instance_11
+2023-11-05 19:33:22,051 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-11-05 00:00:00, time interval:  600.00
+2023-11-05 19:33:22,066 [input_utils.py  | 47] INFO: Get 154 factories
+2023-11-05 19:33:23,031 [input_utils.py  | 51] INFO: Get 23562 routes
+2023-11-05 19:33:23,073 [input_utils.py  | 56] INFO: Get 5 vehicles
+2023-11-05 19:33:23,085 [input_utils.py  | 60] INFO: Get 100 orders
+2023-11-05 19:33:23,086 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-11-05 19:33:23,086 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-11-05 19:33:23,087 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-11-05 19:33:23,087 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-11-05 19:33:23,087 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-11-05 19:33:23,088 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:23,088 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 00:10:00, pre time: 2023-11-05 00:00:00
+2023-11-05 19:33:23,088 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 00:10:00
+2023-11-05 19:33:23,089 [simulate_environment.py | 184] INFO: Get 4 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:24,640 [simulate_environment.py | 273] INFO: 2023-11-05 00:10:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:24,640 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 2
+2023-11-05 19:33:24,640 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 2
+2023-11-05 19:33:24,642 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 2
+2023-11-05 19:33:24,642 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 2
+2023-11-05 19:33:24,643 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 2
+2023-11-05 19:33:24,643 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:24,643 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 00:20:00, pre time: 2023-11-05 00:10:00
+2023-11-05 19:33:24,644 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 00:20:00
+2023-11-05 19:33:24,645 [simulate_environment.py | 184] INFO: Get 5 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:26,180 [simulate_environment.py | 273] INFO: 2023-11-05 00:20:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:26,180 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 3
+2023-11-05 19:33:26,180 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 3
+2023-11-05 19:33:26,180 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 3
+2023-11-05 19:33:26,189 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 3
+2023-11-05 19:33:26,189 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 3
+2023-11-05 19:33:26,189 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:26,190 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 00:30:00, pre time: 2023-11-05 00:20:00
+2023-11-05 19:33:26,190 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 00:30:00
+2023-11-05 19:33:26,192 [simulate_environment.py | 184] INFO: Get 12 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:27,739 [simulate_environment.py | 273] INFO: 2023-11-05 00:30:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:27,739 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 4
+2023-11-05 19:33:27,742 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 4
+2023-11-05 19:33:27,742 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 4
+2023-11-05 19:33:27,742 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 4
+2023-11-05 19:33:27,743 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 4
+2023-11-05 19:33:27,743 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:27,743 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 00:40:00, pre time: 2023-11-05 00:30:00
+2023-11-05 19:33:27,744 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 00:40:00
+2023-11-05 19:33:27,745 [simulate_environment.py | 184] INFO: Get 12 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:29,298 [simulate_environment.py | 273] INFO: 2023-11-05 00:40:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:29,298 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 5
+2023-11-05 19:33:29,298 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 5
+2023-11-05 19:33:29,301 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 5
+2023-11-05 19:33:29,301 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 5
+2023-11-05 19:33:29,301 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 5
+2023-11-05 19:33:29,302 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:29,302 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 00:50:00, pre time: 2023-11-05 00:40:00
+2023-11-05 19:33:29,302 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 00:50:00
+2023-11-05 19:33:29,303 [simulate_environment.py | 184] INFO: Get 14 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:30,857 [simulate_environment.py | 273] INFO: 2023-11-05 00:50:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:30,857 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 6
+2023-11-05 19:33:30,857 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 6
+2023-11-05 19:33:30,857 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 6
+2023-11-05 19:33:30,857 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 6
+2023-11-05 19:33:30,870 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 6
+2023-11-05 19:33:30,870 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:30,871 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 01:00:00, pre time: 2023-11-05 00:50:00
+2023-11-05 19:33:30,871 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 01:00:00
+2023-11-05 19:33:30,872 [simulate_environment.py | 184] INFO: Get 14 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:32,432 [simulate_environment.py | 273] INFO: 2023-11-05 01:00:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:32,432 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 7
+2023-11-05 19:33:32,432 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 7
+2023-11-05 19:33:32,442 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 7
+2023-11-05 19:33:32,442 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 7
+2023-11-05 19:33:32,443 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 7
+2023-11-05 19:33:32,443 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:32,443 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 01:10:00, pre time: 2023-11-05 01:00:00
+2023-11-05 19:33:32,444 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 01:10:00
+2023-11-05 19:33:32,445 [simulate_environment.py | 184] INFO: Get 14 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:33,991 [simulate_environment.py | 273] INFO: 2023-11-05 01:10:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:33,991 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 8
+2023-11-05 19:33:33,991 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 8
+2023-11-05 19:33:33,991 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 8
+2023-11-05 19:33:34,005 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 8
+2023-11-05 19:33:34,005 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 8
+2023-11-05 19:33:34,005 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:34,006 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 01:20:00, pre time: 2023-11-05 01:10:00
+2023-11-05 19:33:34,006 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 01:20:00
+2023-11-05 19:33:34,007 [simulate_environment.py | 184] INFO: Get 14 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:35,565 [simulate_environment.py | 273] INFO: 2023-11-05 01:20:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:35,565 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 9
+2023-11-05 19:33:35,565 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 9
+2023-11-05 19:33:35,565 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 9
+2023-11-05 19:33:35,573 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 9
+2023-11-05 19:33:35,573 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 9
+2023-11-05 19:33:35,574 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:35,574 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 01:30:00, pre time: 2023-11-05 01:20:00
+2023-11-05 19:33:35,574 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 01:30:00
+2023-11-05 19:33:35,575 [simulate_environment.py | 184] INFO: Get 14 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:37,140 [simulate_environment.py | 273] INFO: 2023-11-05 01:30:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:37,140 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 10
+2023-11-05 19:33:37,156 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 10
+2023-11-05 19:33:37,156 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 10
+2023-11-05 19:33:37,157 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 10
+2023-11-05 19:33:37,157 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 10
+2023-11-05 19:33:37,157 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:37,158 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 01:40:00, pre time: 2023-11-05 01:30:00
+2023-11-05 19:33:37,158 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 01:40:00
+2023-11-05 19:33:37,159 [simulate_environment.py | 184] INFO: Get 14 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:38,722 [simulate_environment.py | 273] INFO: 2023-11-05 01:40:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:38,722 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 11
+2023-11-05 19:33:38,722 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 11
+2023-11-05 19:33:38,722 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 11
+2023-11-05 19:33:38,726 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 11
+2023-11-05 19:33:38,726 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 11
+2023-11-05 19:33:38,726 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:38,726 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 01:50:00, pre time: 2023-11-05 01:40:00
+2023-11-05 19:33:38,727 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 01:50:00
+2023-11-05 19:33:38,728 [simulate_environment.py | 184] INFO: Get 14 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:40,309 [simulate_environment.py | 273] INFO: 2023-11-05 01:50:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:40,310 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 12
+2023-11-05 19:33:40,310 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 12
+2023-11-05 19:33:40,310 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 12
+2023-11-05 19:33:40,311 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 12
+2023-11-05 19:33:40,311 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 12
+2023-11-05 19:33:40,311 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:40,312 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 02:00:00, pre time: 2023-11-05 01:50:00
+2023-11-05 19:33:40,312 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 02:00:00
+2023-11-05 19:33:40,313 [simulate_environment.py | 184] INFO: Get 14 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:41,874 [simulate_environment.py | 273] INFO: 2023-11-05 02:00:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:41,874 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 13
+2023-11-05 19:33:41,890 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 13
+2023-11-05 19:33:41,890 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 13
+2023-11-05 19:33:41,890 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 13
+2023-11-05 19:33:41,890 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 13
+2023-11-05 19:33:41,891 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:41,891 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 02:10:00, pre time: 2023-11-05 02:00:00
+2023-11-05 19:33:41,891 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 02:10:00
+2023-11-05 19:33:41,894 [simulate_environment.py | 184] INFO: Get 15 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:43,469 [simulate_environment.py | 273] INFO: 2023-11-05 02:10:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:43,469 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 14
+2023-11-05 19:33:43,469 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 14
+2023-11-05 19:33:43,471 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 14
+2023-11-05 19:33:43,471 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 14
+2023-11-05 19:33:43,471 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 14
+2023-11-05 19:33:43,472 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:43,472 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 02:20:00, pre time: 2023-11-05 02:10:00
+2023-11-05 19:33:43,472 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 02:20:00
+2023-11-05 19:33:43,488 [simulate_environment.py | 184] INFO: Get 15 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:45,083 [simulate_environment.py | 273] INFO: 2023-11-05 02:20:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:45,083 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 15
+2023-11-05 19:33:45,083 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 15
+2023-11-05 19:33:45,083 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 15
+2023-11-05 19:33:45,089 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 15
+2023-11-05 19:33:45,089 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 14
+2023-11-05 19:33:45,089 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:45,089 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 02:30:00, pre time: 2023-11-05 02:20:00
+2023-11-05 19:33:45,090 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 02:30:00
+2023-11-05 19:33:45,097 [simulate_environment.py | 184] INFO: Get 15 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-11-05 19:33:46,663 [simulate_environment.py | 273] INFO: 2023-11-05 02:30:00, Item 0001210001-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:46,664 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 16
+2023-11-05 19:33:46,664 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 16
+2023-11-05 19:33:46,664 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 16
+2023-11-05 19:33:46,665 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 16
+2023-11-05 19:33:46,665 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 14
+2023-11-05 19:33:46,665 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:46,666 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 02:40:00, pre time: 2023-11-05 02:30:00
+2023-11-05 19:33:46,666 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 02:40:00
+2023-11-05 19:33:46,676 [simulate_environment.py | 184] INFO: Get 10 unallocated order items, 6 ongoing order items, 0 completed order items
+2023-11-05 19:33:48,239 [simulate_environment.py | 273] INFO: 2023-11-05 02:40:00, Item 0017140003-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:48,239 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 17
+2023-11-05 19:33:48,245 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 17
+2023-11-05 19:33:48,245 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 17
+2023-11-05 19:33:48,245 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 17
+2023-11-05 19:33:48,245 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 14
+2023-11-05 19:33:48,246 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:48,246 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 02:50:00, pre time: 2023-11-05 02:40:00
+2023-11-05 19:33:48,247 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 02:50:00
+2023-11-05 19:33:48,254 [simulate_environment.py | 184] INFO: Get 6 unallocated order items, 10 ongoing order items, 0 completed order items
+2023-11-05 19:33:49,826 [simulate_environment.py | 273] INFO: 2023-11-05 02:50:00, Item 0017140003-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:49,826 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 18
+2023-11-05 19:33:49,829 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 17
+2023-11-05 19:33:49,829 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 17
+2023-11-05 19:33:49,829 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 18
+2023-11-05 19:33:49,830 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 14
+2023-11-05 19:33:49,830 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:49,830 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 03:00:00, pre time: 2023-11-05 02:50:00
+2023-11-05 19:33:49,831 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 03:00:00
+2023-11-05 19:33:49,832 [simulate_environment.py | 184] INFO: Get 7 unallocated order items, 10 ongoing order items, 0 completed order items
+2023-11-05 19:33:51,405 [simulate_environment.py | 273] INFO: 2023-11-05 03:00:00, Item 0017140003-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:51,405 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 18
+2023-11-05 19:33:51,406 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 17
+2023-11-05 19:33:51,406 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 17
+2023-11-05 19:33:51,406 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 18
+2023-11-05 19:33:51,407 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  0.000, visited node list: 14
+2023-11-05 19:33:51,407 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:51,407 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 03:10:00, pre time: 2023-11-05 03:00:00
+2023-11-05 19:33:51,408 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 03:10:00
+2023-11-05 19:33:51,410 [simulate_environment.py | 184] INFO: Get 6 unallocated order items, 11 ongoing order items, 0 completed order items
+2023-11-05 19:33:52,987 [simulate_environment.py | 273] INFO: 2023-11-05 03:10:00, Item 0020420004-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:52,987 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 18
+2023-11-05 19:33:53,003 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 17
+2023-11-05 19:33:53,003 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  0.000, visited node list: 17
+2023-11-05 19:33:53,003 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 18
+2023-11-05 19:33:53,004 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  15.200, visited node list: 15
+2023-11-05 19:33:53,004 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:53,004 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 03:20:00, pre time: 2023-11-05 03:10:00
+2023-11-05 19:33:53,004 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 03:20:00
+2023-11-05 19:33:53,019 [simulate_environment.py | 184] INFO: Get 8 unallocated order items, 7 ongoing order items, 4 completed order items
+2023-11-05 19:33:54,571 [simulate_environment.py | 273] INFO: 2023-11-05 03:20:00, Item 0020420004-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:54,586 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 18
+2023-11-05 19:33:54,587 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  0.000, visited node list: 17
+2023-11-05 19:33:54,587 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  2.100, visited node list: 18
+2023-11-05 19:33:54,587 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 18
+2023-11-05 19:33:54,587 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  15.200, visited node list: 15
+2023-11-05 19:33:54,588 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:54,588 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 03:30:00, pre time: 2023-11-05 03:20:00
+2023-11-05 19:33:54,588 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 03:30:00
+2023-11-05 19:33:54,598 [simulate_environment.py | 184] INFO: Get 10 unallocated order items, 7 ongoing order items, 4 completed order items
+2023-11-05 19:33:56,191 [simulate_environment.py | 273] INFO: 2023-11-05 03:30:00, Item 0020420004-1: state = 1 < 2, we can not finish the simulation
+2023-11-05 19:33:56,191 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_1 is  0.000, visited node list: 18
+2023-11-05 19:33:56,191 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_2 is  8.400, visited node list: 18
+2023-11-05 19:33:56,195 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_3 is  2.100, visited node list: 18
+2023-11-05 19:33:56,195 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 18
+2023-11-05 19:33:56,195 [evaluator.py    | 64] INFO: Traveling Distance of Vehicle V_5 is  15.200, visited node list: 15
+2023-11-05 19:33:56,196 [simulate_environment.py | 115] INFO: **************************************************
+2023-11-05 19:33:56,196 [simulate_environment.py | 119] INFO: cur time: 2023-11-05 03:40:00, pre time: 2023-11-05 03:30:00
+2023-11-05 19:33:56,196 [simulate_environment.py | 157] INFO: Start to update the input of 2023-11-05 03:40:00
+2023-11-05 19:33:56,207 [simulate_environment.py | 184] INFO: Get 10 unallocated order items, 5 ongoing order items, 6 completed order items

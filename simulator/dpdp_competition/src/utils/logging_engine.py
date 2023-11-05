@@ -124,5 +124,5 @@ logger = LoggingEngine(logger_name="glob_logging_engine",
 def test_log():
     log = LoggingEngine(level="debug",
                         contents=["asctime", "levelname", "filename", "lineno", "funcName", "message"])
-
+    
     log.info("Hello World!")

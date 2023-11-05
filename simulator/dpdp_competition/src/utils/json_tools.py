@@ -106,15 +106,22 @@ def write_json_to_file(file_name, data):
 
 
 # 输出input_info数据到input.json
-def convert_input_info_to_json_files(input_info):
+def convert_input_info_to_json_files(input_info,cur_time='',destination_dict=None,place_dict=None):
     vehicle_info_list = __get_vehicle_info_list(input_info.id_to_vehicle)
+    for ele in vehicle_info_list:
+        ele['travel_distance'] = destination_dict[ele['id']]
+        ele['check_place'] = place_dict[ele['id']]
+        
     write_json_to_file(Configs.algorithm_vehicle_input_info_path, vehicle_info_list)
-
+    write_json_to_file(f'C://Users//Administrator//Desktop//logistic//Demo//xingtian//simulator//dpdp_competition//output//vehicle_info//{cur_time}.json', vehicle_info_list)
+    
     unallocated_order_items = convert_dict_to_list(input_info.id_to_unallocated_order_item)
     write_json_to_file(Configs.algorithm_unallocated_order_items_input_path, unallocated_order_items)
-
+    write_json_to_file(f'C://Users//Administrator//Desktop//logistic//Demo//xingtian//simulator//dpdp_competition//output//unallocated_order//{cur_time}.json', unallocated_order_items)
+    
     ongoing_order_items = convert_dict_to_list(input_info.id_to_ongoing_order_item)
     write_json_to_file(Configs.algorithm_ongoing_order_items_input_path, ongoing_order_items)
+    write_json_to_file(f'C://Users//Administrator//Desktop//logistic//Demo//xingtian//simulator//dpdp_competition//output//ongoing_order//{cur_time}.json', ongoing_order_items)
 
 
 def __get_vehicle_info_list(id_to_vehicle: dict):
@@ -266,15 +273,16 @@ def convert_node_to_json(node):
 
 """ Read the output json files of the algorithm"""
 
-
 # 从output.json获取数据，并进行数据结构转换
-def get_output_of_algorithm(id_to_order_item: dict):
+def get_output_of_algorithm(id_to_order_item: dict,cur_time=''):
     vehicle_id_to_destination_from_json = read_json_from_file(Configs.algorithm_output_destination_path)
+    write_json_to_file(f'C://Users//Administrator//Desktop//logistic//Demo//xingtian//simulator//dpdp_competition//output//output_destination//{cur_time}.json', vehicle_id_to_destination_from_json)
     vehicle_id_to_destination = __convert_json_to_nodes(vehicle_id_to_destination_from_json, id_to_order_item)
+    
     vehicle_id_to_planned_route_from_json = read_json_from_file(Configs.algorithm_output_planned_route_path)
+    write_json_to_file(f'C://Users//Administrator//Desktop//logistic//Demo//xingtian//simulator//dpdp_competition//output//output_route//{cur_time}.json', vehicle_id_to_planned_route_from_json)
     vehicle_id_to_planned_route = __convert_json_to_nodes(vehicle_id_to_planned_route_from_json, id_to_order_item)
     return vehicle_id_to_destination, vehicle_id_to_planned_route
-
 
 def __convert_json_to_nodes(vehicle_id_to_nodes_from_json: dict, id_to_order_item: dict):
     result_dict = {}
